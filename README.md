@@ -1,4 +1,4 @@
-## Kicad 5.0.0 Inside Docker
+## Kicad 5.1.5 Inside Docker
 
 This docker file allow to run kicad GUI app, so you can use the latest kicad version on any linux distribution.
 
