@@ -13,6 +13,11 @@ docker -t kicad5 .
 ```
 docker run --net=host --env="DISPLAY" --volume="/run/user/$(id -u)/gdm/Xauthority:/root/.Xauthority:rw" --volume="/kicad-workspace:/opt/kicad-workspace" kicad5
 ```
+or use the next command to execute kicad
+```
+docker run --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --rm --volume="/kicad-workspace:/opt/kicad-workspace" kicad:5.1.5
+```
+
 if you are using debina and it shows he net error
 
 ```
