@@ -13,5 +13,10 @@ docker -t kicad5 .
 ```
 docker run --net=host --env="DISPLAY" --volume="/run/user/$(id -u)/gdm/Xauthority:/root/.Xauthority:rw" --volume="/kicad-workspace:/opt/kicad-workspace" kicad5
 ```
+if you are using debina and it shows he net error
 
+```
+Error: Unable to initialize GTK+, is DISPLAY set properly?
+```
+Please try to run the command "xhost +" before.
 
